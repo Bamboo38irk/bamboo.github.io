@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Broplay · E-mail</title>
+
+    <style>
+        body {
+            font:16px Arial;
+        }
+
+        a { color:#0A84FF; text-decoration:underline; }
+
+        * {
+            outline:none;
+            margin:0;
+            padding:0;
+        }
+
+        .grid {
+            max-width:800px;
+            padding:5%;
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
+            gap:24px;
+            grid-row-gap:48px;
+        }
+
+        .grid-label {
+            font-weight:bold;
+            font-size:24px;
+            margin:0 0 16px;
+        }
+
+        .grid-list {
+            display:flex;
+            flex-direction:column;
+            gap:16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid">
+    <div class="grid-column">
+        <div class="grid-label">Password</div>
+        <div class="grid-list">
+            <a href="password-reset.html">Reset</a>
+            <a href="password-changed.html">Changed</a>
+            <a href="password-logged.html">Logged</a>
+        </div>
+    </div>
+
+    <div class="grid-column">
+        <div class="grid-label">Wallet</div>
+        <div class="grid-list">
+            <a href="wallet-add.html">Add funds</a>
+            <a href="wallet-withdraw.html">Withdraw</a>
+            <a href="wallet-order-add.html">Order add funds</a>
+            <a href="wallet-order-add-2.html">Order add funds #2</a>
+            <a href="wallet-order-cancel.html">Order cancel</a>
+        </div>
+    </div>
+
+    <div class="grid-column">
+        <div class="grid-label">Messages</div>
+        <div class="grid-list">
+            <a href="messages-new.html">New</a>
+        </div>
+    </div>
+
+    <div class="grid-column">
+        <div class="grid-label">Feedback</div>
+        <div class="grid-list">
+            <a href="feedback-newreview.html">New review</a>
+            <a href="feedback-newcomment.html">New comment</a>
+        </div>
+    </div>
+
+    <div class="grid-column">
+        <div class="grid-label">Store</div>
+        <div class="grid-list">
+            <a href="store-newdeal.html">New deal</a>
+            <a href="store-newdealgold.html">New deal Gold</a>
+            <a href="store-buyer.html">Buyer</a>
+            <a href="store-seller.html">Seller</a>
+        </div>
+    </div>
+
+    <div class="grid-column">
+        <div class="grid-label">Verification</div>
+        <div class="grid-list">
+            <a href="verify-code.html">Code</a>
+            <a href="verify-success.html">Success</a>
+            <a href="verify-error.html">Error</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
